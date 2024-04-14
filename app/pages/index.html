@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Animation Portfólio</title>
+        <link rel="stylesheet" href="/src/assets/css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav
+                class="bg-[#e7e7e2] text-[#3a3733] text-md flex justify-between items-center px-10 py-3">
+                <div>
+                    Logo
+                </div>
+                <div>
+                    <ul class="flex flex-col font-semibold">
+                        <li
+                            class="hover:text-gray-600 hover:transition-all hover:delay-100"><a
+                                href="#">Services</a></li>
+                        <li
+                            class="hover:text-gray-600 hover:transition-all hover:delay-100"><a
+                                href="#">Works</a></li>
+                        <li
+                            class="hover:text-gray-600 hover:transition-all hover:delay-100"><a
+                                href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section
+                class="panel h-[80vh] bg-[#e7e7e2] text-[#4b5563] flex flex-col justify-center items-center ">
+                <div class="flex flex-col items-center ">
+                    <div id="text_el">
+                        <h1 class="text-[4rem] font-bold">Hey, Fabiana here!</h1>
+                        <!-- <p class="text-center">Here's a peek at my system development projects and UX work.</p> -->
+                        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                <dotlottie-player src="https://lottie.host/22a22735-1a06-4b74-889e-53a974ac0d23/E1UV4hXwN7.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></dotlottie-player>
+            </section>
+
+            <section class="panel min-h-[100vh] bg-black text-white flex justify-center items-center py-9 rounded-t-3xl">
+
+                    <div class="container">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center justify-center p-5">
+                            <h2 class="text-[2rem] sm:text-[5rem] font-bold text-center reveal-type"  data-bg-color="#4b5563" data-fg-color="#cdf27e">What i do.</h2>
+                            <p class="w-11/12 reveal-type text-[2rem]" data-bg-color="#4b5563" data-fg-color="#cdf27e">I'm driven to create digital experiences that deliver a powerful impact and propel your business to the forefront. </p>
+                        </div>
+
+                        <div class="h-[1px] bg-gray-600 w-[80%] m-auto"></div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-20 items-center justify-center p-5 py-10 w-[80%] m-auto" id="element">
+                           <div class="flex flex-col gap-5">
+                            <div class="flex gap-5 items-center">                                
+                            <img src="/src/images/icons/flower.svg" alt="flower icon" width="50">
+                            <h3 class="text-[1.6rem] sm:text-[3rem] reveal-type " id="content-element" data-bg-color="#4b5563" data-fg-color="#cdf27e">Web Development </h3>
+                            </div>
+                            <div>
+                                <p class="px-16 text-[1rem]">I create unique, custom-coded websites that are tailored to your brand. I focus on scalability, performance, accessibility, and engaging animations for a memorable experience.</p>
+                            </div>
+                           </div>
+                           <div>
+                            Conteudo de texto
+                           </div>
+
+
+
+                            
+                           <div class="flex flex-col gap-5"  >
+                            <div class="flex gap-5 items-center">                                
+                             <img src="/src/images/icons/lotus.svg" alt="flower icon" width="50">
+                             <h3 class="text-[1.6rem] sm:text-[3rem] reveal-type " id="content-element" data-bg-color="#4b5563" data-fg-color="#cdf27e">UI Design </h3>
+                             </div>
+                             <div>
+                                 <p class="px-16 text-[1rem]">I create unique, custom-coded websites that are tailored to your brand. I focus on scalability, performance, accessibility, and engaging animations for a memorable experience.</p>
+                             </div>
+                            </div>
+                            <div>
+                             Conteudo de texto
+                            </div>
+  
+
+                        </div>
+
+
+                       
+                    </div>
+
+
+            </section>
+
+            <section class="panel h-[100vh] bg-green-100">
+                <h1 class="font-bold uppercase text-red-600">Pagina em funcionamento</h1>
+            </section>
+
+        </main>
+
+
+
+        <!-- Split Type -->
+            <script src="https://unpkg.com/split-type"></script>
+        <!-- Gsap -->
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+        <!-- Lenis -->
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+        <!-- Scripts -->
+        <script type="module" src="/src/assets/js/main.js"></script>
+        <script src="/src/assets/js/Core/lenis.js"></script>
+
+        <script src="Core/animations.js"></script>
+
+    </body>
+</html>
