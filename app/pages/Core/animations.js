@@ -53,3 +53,22 @@ gsap.from(element, {
          toggleActions: 'play play reverse reverse'
     }
 })
+
+
+const  inicioAnimacao = document.querySelector("#inicioAnimacao");
+const  animacaoEmSi = document.querySelector("#animacaoEmSi");
+
+gsap.from(animacaoEmSi, {
+    opacity:0,
+    y:40, 
+    x:50,
+    ease: "slow(0.7,0.7,false)",
+    duration:1,
+    scrollTrigger: {
+        trigger: inicioAnimacao,
+        start:"-400px",
+        end:"bottom",
+          toggleActions: 'play play reverse reverse'
+
+    }
+})
