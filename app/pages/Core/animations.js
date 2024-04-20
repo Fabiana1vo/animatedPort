@@ -72,3 +72,21 @@ gsap.from(animacaoEmSi, {
 
     }
 })
+
+const imgSection = document.querySelector(".product-image-section") //Local de onde a animaçao parte
+const container = document.querySelector(".container");
+let painel = document.querySelector(".painel");
+
+
+let sections =  gsap.utils.toArray(".painel");
+
+let scrollTween = gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger:{
+        trigger: imgSection,
+        pin:true,
+        scrub: .01,
+        end: "+=3000"
+    }
+})
